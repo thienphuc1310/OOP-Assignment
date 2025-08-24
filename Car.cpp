@@ -7,13 +7,15 @@ Mô tả: Xây dựng một class Car với các thuộc tính như brand và ye
 
 using namespace std;
 
-class Car // Tạo một class tên Car
+// Class Car dùng để lưu trữ thông tin của xe
+class Car
 {
 public:
 	string brand; // Thương hiệu xe
 	int year; // Năm sản xuất của xe
 
-	void displayInfo() // Phương thức hiển thị thông tin xe
+	// Phương thức hiển thị thông tin xe (thương hiệu và năm sản xuất)
+	void displayInfo()
 	{
 		cout << "Brand: " << brand << endl;
 		cout << "Year: " << year << endl;
@@ -22,14 +24,18 @@ public:
 
 int main()
 {
-	Car car1; // Tạo một đối tượng Car có tên là car1
-	
-	car1.brand = "Toyota"; // Gán thương hiệu Toyota cho car1
-	car1.year = 2020; // Gán năm sản xuất 2020 cho car1
-	
-	car1.displayInfo(); // Gọi phương thức để hiển thị thông tin xe car1
+	// Tạo một đối tượng Car có tên là car1
+	Car car1;
+
+	// Gán giá trị cho các thuộc tính của car1
+	car1.brand = "Toyota";
+	car1.year = 2020;
+
+	// Gọi phương thức để hiển thị thông tin xe car1
+	car1.displayInfo();
 
 	return 0;
 
 }
+
 
