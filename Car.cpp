@@ -1,14 +1,19 @@
-﻿#include <iostream>
+/* Tác giả: Phạm Thiên Phúc
+Mssv: 21110075
+Mô tả: Xây dựng một class Car với các thuộc tính như brand và year. Class này có phương thức để hiển thị thông tin về xe.
+*/
+
+#include <iostream>
 
 using namespace std;
 
-class Car
+class Car // Tạo một class tên Car
 {
 public:
-	string brand;
-	int year;
+	string brand; // Khai báo brand: Thương hiệu xe
+	int year; // Khai báo year: Năm sản xuất của xe
 
-	void displayInfo()
+	void displayInfo() // Phương thức hiển thị thông tin xe
 	{
 		cout << "Brand: " << brand << endl;
 		cout << "Year: " << year << endl;
@@ -17,10 +22,13 @@ public:
 
 int main()
 {
-	Car car1;
-	car1.brand = "Toyota";
-	car1.year = 2020;
-	car1.displayInfo();
+	Car car1; // Tạo một đối tượng Car có tên là car1
+	
+	car1.brand = "Toyota"; // Gán thương hiệu Toyota cho car1
+	car1.year = 2020; // Gán năm sản xuất 2020 cho car1
+	
+	car1.displayInfo(); // Gọi phương thức để hiển thị thông tin xe car1
 
 	return 0;
+
 }
