@@ -10,8 +10,8 @@ using namespace std;
 class Car // Tạo một class tên Car
 {
 public:
-	string brand; // Khai báo brand: Thương hiệu xe
-	int year; // Khai báo year: Năm sản xuất của xe
+	string brand; // Thương hiệu xe
+	int year; // Năm sản xuất của xe
 
 	void displayInfo() // Phương thức hiển thị thông tin xe
 	{
@@ -32,3 +32,4 @@ int main()
 	return 0;
 
 }
+
